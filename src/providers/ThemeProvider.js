@@ -1,4 +1,5 @@
 import React, { useState, } from 'react';
+
 import eagleHead from '../images/eagle-head.jpg'
 import vikingShip from '../images/viking-ship.jpg'
 import totumPole from '../images/totum-pole.jpg'
@@ -109,22 +110,16 @@ const ThemeProvider = (props) => {
   const [homePageArt, setHomePageArt] = useState([initState[0]])
   const [fade, setFade] = useState(false)
 
-  console.log('homePageArt inprovider', homePageArt)
 
   const addToHomePage = async (theArtPiece) => {
-
     await setHomePageArt( prev => ([theArtPiece]))
     setFade(prev => (!prev))
-     
   }
-  const removeFromHomePage = (theArtPiece) => {
 
+  const removeFromHomePage = (theArtPiece) => {
     const takeAway = homePageArt.filter(art => art !== theArtPiece)
     setHomePageArt(takeAway)
   }
-  
-
-  
 
   return (
     <ThemeContext.Provider value={{

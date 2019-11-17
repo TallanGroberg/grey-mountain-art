@@ -3,14 +3,8 @@ import {withTheme} from '../providers/ThemeProvider'
 import styled from 'styled-components'
 import {Link} from 'react-router-dom'
 const ArtPiece = (props) => {
-
   const {_id} = props.match.params
-
-
-
     const getArt = props.artInfo.filter(art => art._id === _id)
-    
-
   return (<>
     {getArt.map(art => {
       return (
@@ -29,10 +23,10 @@ const ArtPiece = (props) => {
 };
 
 const ArtPieceStyle = styled.div`
-z-index: 1;
-text-align: center;
-margin-top: 7vh;
-margin-bottom: 7vh;
+  z-index: 1;
+  text-align: center;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
   img {
     width: 75%;
     height: 75%;

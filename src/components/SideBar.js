@@ -1,9 +1,11 @@
 import React from 'react';
 import {withTheme} from '../providers/ThemeProvider'
-import ArtPiece from './ArtPiece'
-import LargeArtPiece from './LargeArtPiece'
 import {Route, Switch, Link} from 'react-router-dom'
 import styled from 'styled-components'
+
+import ArtPiece from './ArtPiece'
+import LargeArtPiece from './LargeArtPiece'
+
 const SideBar = (props) => {
 
   const{homePageArt} = props
@@ -13,14 +15,14 @@ const SideBar = (props) => {
         <>
           {window.innerWidth < 1000 && <h1>hello my name is Jason Scott and these are my art pieces, some of them are for sell. if you only want to look at the ones for sell please click on the for sell link at the bottom right.</h1>}
           {props.artInfo.map( art => 
-          <SideBarStyle onMouseEnter={() =>props.addToHomePage(art)}>
-            <Link key={art.title} to={'/art/' + art._id}>
-              <h1>{art.title}</h1>
-                <p>{art.price}</p>
-                  <img src={art.img} height='100pt' width='100pt' />
-                    <p>type: {art.type}</p>
-            </Link> 
-           </SideBarStyle>
+            <SideBarStyle onMouseEnter={() =>props.addToHomePage(art)}>
+              <Link key={art.title} to={'/art/' + art._id}>
+                <h1>{art.title}</h1>
+                  <p>{art.price}</p>
+                    <img src={art.img} height='100pt' width='100pt' />
+                      <p>type: {art.type}</p>
+              </Link> 
+            </SideBarStyle>
             )}
         </>
     </div>

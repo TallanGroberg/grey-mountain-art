@@ -12,20 +12,21 @@ const ForSell = (props) => {
   return (
     <ForSellStyle>
       <h1>these are all my pieces, if you want to buy a piece please go to the contact page, let me know which piece you are interested in. </h1>
-      {Sellables.map(art => {
+        {Sellables.map(art => {
+            return (
 
-        return <div>
-        <Link to={'/art/' + art._id}>
-          <h1>{art.title}</h1>
-            <p>{art.description}</p> 
-              <p>$ {art.price}</p>
-                <img src={art.img}  />
-                  <p>type: {art.type}</p>
-        </Link>
-                  <Link to='/'>Back to Home</Link>
-                </div>
-      }
-        )}
+              <div>
+              <Link to={'/art/' + art._id}>
+                <h1>{art.title}</h1>
+                  <p>{art.description}</p> 
+                    <p>$ {art.price}</p>
+                      <img src={art.img}  />
+                        <p>type: {art.type}</p>
+              </Link>
+                      <Link to='/'>Back to Home</Link>
+          </div>
+          )
+        })}
     </ForSellStyle>
   );
 };

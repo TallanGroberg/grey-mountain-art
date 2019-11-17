@@ -13,9 +13,6 @@ import ForSell from './components/ForSell'
 
 const App = props => {
 
-
-
-
   return (<>
     <Container>
       <Nav  />

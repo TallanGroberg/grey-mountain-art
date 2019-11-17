@@ -7,9 +7,7 @@ const Contact = (props) => {
     <ContactStyle>
       <h1>Contact</h1>
         <h4>email: </h4>
-        <h4>Phone: 801-682-2655</h4>
-      
-          
+          <h4>Phone: 801-682-2655</h4>
     </ContactStyle>
   );
 };

@@ -1,21 +1,20 @@
 import React from 'react';
+import {withTheme} from '../providers/ThemeProvider'
 import styled from 'styled-components'
 
 import SideBar from './SideBar'
 import LargeArtPiece from './LargeArtPiece'
-import {withTheme} from '../providers/ThemeProvider'
-
 
 const Home = (props) => {
- 
 
   const {homePageArt, addToHomePage, artInfo} = props
- 
-  return (<HomeStyle>
-      <SideBar  />
-    <div className='div2'>
-      {homePageArt.length === 0 ? null : homePageArt.map( art => <LargeArtPiece art={art} />) }
-    </div>
+
+  return (
+    <HomeStyle>
+        <SideBar  />
+          <div className='div2'>
+            {homePageArt.length === 0 ? null : homePageArt.map( art => <LargeArtPiece art={art} />) }
+          </div>
     </HomeStyle>
   );
 };
@@ -32,7 +31,6 @@ const HomeStyle = styled.div`
 
   .div1 { 
         grid-area: 1 / 1 / 5 / 2; 
-        
         padding: 3pt;
         text-align: center;
         overflow-y:auto 
@@ -59,7 +57,6 @@ const HomeStyle = styled.div`
     }
 
     @media only screen and (min-width: 1000px) {
-      
       .div1 {
         margin-top: 5vh;
       }

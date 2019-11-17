@@ -12,10 +12,10 @@ const LargeArtPiece = (props) => {
       <Link to={'/art/' + props.art._id}>
         <h1>{title}</h1>
           <p>{description}</p>
-          <p> $ {price}</p>
-          <img src={img} height='400pt' width='400pt' />
-          <p>type: {type}</p>
-          </Link>
+            <p> $ {price}</p>
+              <img src={img} height='400pt' width='400pt' />
+                <p>type: {type}</p>
+      </Link>
     </>
   );
 };
