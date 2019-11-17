@@ -15,24 +15,26 @@ const App = props => {
 
   return (<>
   <Nav  />
-    <Container>
       <Switch>
+    <Container>
         <Route exact path='/' render={rProps => <Home {...rProps} />} /> 
+    </Container>
         <Route exact path='/about' render={rProps => <About {...rProps} />} /> 
         <Route path='/art/:_id' render={rProps => <ArtPiece {...rProps} />} />
       </Switch>
-    </Container>
           </>);
 };
 
 const Container = styled.div`
     height: 99vh;
-    border: 1px solid black;
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
+    font-family: Belleza, sans-serif;
+    text-align: center;
     a {
       text-decoration: none;
       color: black;
@@ -42,23 +44,19 @@ const Container = styled.div`
       color: #2F4F4F;
     }
 
-    font-family: Belleza, sans-serif;
-    text-align: center;
     
     
     
   .div1 { 
-    grid-area: 1 / 1 / 5 / 2; 
-        /* this is for dev only */
-        border: 1px solid black;
+        grid-area: 1 / 1 / 5 / 2; 
+        box-shadow: 0px 3px 31px -19px rgba(0,0,0,0.75);
         padding: 3pt;
         text-align: center;
         overflow-y:auto 
   }
   .div2 { 
         grid-area: 1 / 2 / 5 / 5; 
-        /* this is for dev only */
-        border: 1px solid black;
+        
   }
   
     @media only screen and (max-width: 1000px) {
