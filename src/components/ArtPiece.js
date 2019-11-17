@@ -8,7 +8,12 @@ const ArtPiece = (props) => {
 
 
 
-    const getArt = props.artInfo.filter(art => art._id === _id)
+    const getArt = props.artInfo.filter(art =>{
+      debugger
+      return art._id === _id
+
+    } 
+    )
     const {title, description, price,img,type} = getArt
     
 

@@ -24,9 +24,7 @@ const SideBar = (props) => {
             )}
         </>
       
-      <Switch>
-          <Route path='/art/:_id' render={rProps => <ArtPiece {...rProps} />} />
-      </Switch>
+      
     
     </div>
   );
