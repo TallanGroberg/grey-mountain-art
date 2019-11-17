@@ -1,5 +1,6 @@
 import React from 'react';
 import Styled from 'styled-components'
+import {Link} from 'react-router-dom'
 
 const LargeArtPiece = (props) => {
   
@@ -8,14 +9,13 @@ const LargeArtPiece = (props) => {
 
   return (
     <>
-      
-      <h1>{title}</h1>
-        <p>{description}</p>
-        <p>test{price}</p>
-        <img src={img} height='400pt' width='400pt' />
-        <p>type: {type}</p>
-     
-      
+      <Link to={'/art/' + props.art._id}>
+        <h1>{title}</h1>
+          <p>{description}</p>
+          <p> $ {price}</p>
+          <img src={img} height='400pt' width='400pt' />
+          <p>type: {type}</p>
+          </Link>
     </>
   );
 };

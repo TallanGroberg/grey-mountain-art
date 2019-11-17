@@ -4,7 +4,11 @@ import vikingShip from '../images/viking-ship.jpg'
 import totumPole from '../images/totum-pole.jpg'
 import tiger from '../images/tiger.jpg'
 import samari from '../images/samari.jpg'
-
+import coatRack from '../images/rams-coat-rack.jpg'
+import Indian from '../images/indian.jpg'
+import firePit from '../images/fire-pit.jpg'
+import feather from '../images/feather.jpg'
+import familyCrest from '../images/family-crest.jpg'
 
 const ThemeContext = React.createContext()
 
@@ -39,7 +43,7 @@ const ThemeProvider = (props) => {
           title: 'tiger',
           img: tiger,
           description: 'this is an anodized copper piece',
-          price: '5,000',
+          price: 5000,
           type: 'Fine art',
           _id: '4'
           },
@@ -47,10 +51,50 @@ const ThemeProvider = (props) => {
           title: 'the Samari',
           img: samari,
           description: 'a Samari in a classic fighting pose',
-          price: '10,000',
+          price: 10000,
           type: 'Fine art',
           _id: '5',
           },
+          {
+            title: 'decorative coat rack',
+            img: coatRack,
+            description: 'a decorative coat rack',
+            price: 2000,
+            type: 'functional art',
+            _id: '6',
+            },
+            {
+              title: 'Indian',
+              img: Indian,
+              description: 'a decorative piece of an indian',
+              price: 3000,
+              type: 'Fine Art',
+              _id: '7',
+              },
+              {
+                title: 'decorative fire pit',
+                img: firePit,
+                description: 'a fire pit that gently displays the outline of a beautiful scene',
+                price: 500,
+                type: 'functional art',
+                _id: '8',
+                },
+                {
+                  title: 'feather stand',
+                  img: feather,
+                  description: 'a beautiful feather piece',
+                  price: 2000,
+                  type: 'functional',
+                  _id: '8',
+                  },
+                  {
+                    title: 'family crest',
+                    img: familyCrest,
+                    description: 'this is  my family crest.',
+                    price: 'not for sale',
+                    type: 'Fine Art',
+                    _id: '9',
+                    },
       ]
   // {
   //   title: '',
@@ -58,7 +102,7 @@ const ThemeProvider = (props) => {
   //   description: '',
   //   price: '',
   //   type: '',
-   //  _id: '',
+  //   _id: '',
   //   },
   const [artInfo, setArtInfo] = useState(initState)
   const [theme, setTheme] = useState("light")

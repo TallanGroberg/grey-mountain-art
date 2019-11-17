@@ -8,6 +8,7 @@ import Home from './components/Home'
 import About from './components/About'
 import ArtPiece from './components/ArtPiece'
 import Contact from './components/Contact'
+import ForSell from './components/ForSell'
 
 
 const App = props => {
@@ -20,6 +21,7 @@ const App = props => {
       <Nav  />
           <Switch>
             <Route exact path='/' render={rProps => <Home {...rProps} />} /> 
+            <Route exact path='/forsell' render={rProps => <ForSell {...rProps} />} /> 
             <Route exact path='/contact' render={rProps => <Contact {...rProps} />} /> 
             <Route exact path='/about' render={rProps => <About {...rProps} />} /> 
             <Route path='/art/:_id' render={rProps => <ArtPiece {...rProps} />} />

@@ -11,7 +11,7 @@ const SideBar = (props) => {
   return (
     <div className='div1'>
         <>
-          {window.innerWidth < 1000 && <h1>hello my name is Jason Scott and these are my art pieces</h1>}
+          {window.innerWidth < 1000 && <h1>hello my name is Jason Scott and these are my art pieces, some of them are for sell. if you only want to look at the ones for sell please click on the for sell link at the bottom right.</h1>}
           {props.artInfo.map( art => 
           <SideBarStyle onMouseEnter={() =>props.addToHomePage(art)}>
             <Link key={art.title} to={'/art/' + art._id}>
