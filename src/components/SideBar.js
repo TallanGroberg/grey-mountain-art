@@ -10,8 +10,8 @@ const SideBar = (props) => {
   
   return (
     <div className='div1'>
-      
         <>
+          {window.innerWidth < 1000 && <h1>hello my name is Jason Scott and these are my art pieces</h1>}
           {props.artInfo.map( art => 
           <SideBarStyle onMouseEnter={() =>props.addToHomePage(art)}>
             <Link key={art.title} to={'/art/' + art._id}>
@@ -23,9 +23,6 @@ const SideBar = (props) => {
            </SideBarStyle>
             )}
         </>
-      
-      
-    
     </div>
   );
 };

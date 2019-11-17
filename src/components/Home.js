@@ -22,7 +22,6 @@ const Home = (props) => {
 
 const HomeStyle = styled.div`
     height: 99vh;
-    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -30,7 +29,6 @@ const HomeStyle = styled.div`
     grid-row-gap: 0px;
     font-family: Belleza, sans-serif;
     text-align: center;
-    
 
   .div1 { 
         grid-area: 1 / 1 / 5 / 2; 

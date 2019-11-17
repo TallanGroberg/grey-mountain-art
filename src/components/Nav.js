@@ -4,23 +4,23 @@ import {Link } from 'react-router-dom'
 const Nav = () => {
   return (
     <NavStyle>
-      <Link to='/about'>About</Link>
       <Link to='/'>Home</Link>
+      <Link to='/about'>About The Artist</Link>
+      <Link to='/contact'>Contact</Link>
     </NavStyle>
   );
 };
 
 const NavStyle = styled.div`
     height: 5vh;
-    width: 100%;
+    width: 105%;
+    left: -5pt;
     box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
     background-color: whitesmoke;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    
-
     font-family: Belleza, sans-serif;
     text-align: center;
 
