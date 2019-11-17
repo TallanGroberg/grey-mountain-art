@@ -11,16 +11,16 @@ const Home = (props) => {
 
   const {homePageArt, addToHomePage, artInfo} = props
  
-  return (<Container>
+  return (<HomeStyle>
       <SideBar  />
     <div className='div2'>
       {homePageArt.length === 0 ? null : homePageArt.map( art => <LargeArtPiece art={art} />) }
     </div>
-    </Container>
+    </HomeStyle>
   );
 };
 
-const Container = styled.div`
+const HomeStyle = styled.div`
     height: 99vh;
     
     display: grid;
@@ -30,18 +30,11 @@ const Container = styled.div`
     grid-row-gap: 0px;
     font-family: Belleza, sans-serif;
     text-align: center;
-    a {
-      text-decoration: none;
-      color: black;
-      transition: 0.3s
-    }
-    a:hover {
-      color: #2F4F4F;
-    }
+    
 
   .div1 { 
         grid-area: 1 / 1 / 5 / 2; 
-        box-shadow: 0px 3px 31px -19px rgba(0,0,0,0.75);
+        
         padding: 3pt;
         text-align: center;
         overflow-y:auto 

@@ -43,7 +43,7 @@ const ThemeProvider = (props) => {
   //   }
   const [artInfo, setArtInfo] = useState(initState)
   const [theme, setTheme] = useState("light")
-  const [homePageArt, setHomePageArt] = useState([])
+  const [homePageArt, setHomePageArt] = useState([initState[0]])
   const [fade, setFade] = useState(false)
 
   console.log('homePageArt inprovider', homePageArt)

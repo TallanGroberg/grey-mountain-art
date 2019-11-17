@@ -14,13 +14,44 @@ const App = props => {
 
 
   return (<>
-  <Nav  />
-      <Switch>
-        <Route exact path='/' render={rProps => <Home {...rProps} />} /> 
-        <Route exact path='/about' render={rProps => <About {...rProps} />} /> 
-        <Route path='/art/:_id' render={rProps => <ArtPiece {...rProps} />} />
-      </Switch>
+    <Container>
+      <Nav  />
+          <Switch>
+            <Route exact path='/' render={rProps => <Home {...rProps} />} /> 
+            <Route exact path='/about' render={rProps => <About {...rProps} />} /> 
+            <Route path='/art/:_id' render={rProps => <ArtPiece {...rProps} />} />
+          </Switch>
+    </Container>
           </>);
 };
+
+const Container = styled.div`
+   font-family: Belleza, sans-serif;
+    text-align: center;
+    h2 {
+    font-size: 20pt;
+  }
+  h3 {
+    font-size: 17pt;
+  }
+  h4 {
+    font-size: 13pt;
+  }
+  p {
+    font-size: 10pt;
+  }
+  a {
+      text-decoration: none;
+      color: black;
+      transition: 0.3s
+    }
+    a:hover {
+      color: #2F4F4F;
+    }
+    img {
+      box-shadow: 0px 0px 9px -4px rgba(0,0,0,0.75);
+    }
+`
+
 
 export default withTheme(App);
