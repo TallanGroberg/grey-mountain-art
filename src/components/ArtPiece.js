@@ -29,7 +29,7 @@ const ArtPieceStyle = styled.div`
   margin-bottom: 7vh;
   img {
     width: 75%;
-    height: 75%;
+    height: 80vh;
   }
 `;
 

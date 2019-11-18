@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <NavStyle>
       <Link to='/'>Home</Link>
-      <Link to='/about'>About The Artist</Link>
+      <Link to='/about'>About</Link>
       <Link to='/contact'>Contact</Link>
       <Link to='/forsell'>for sell </Link>
     </NavStyle>
