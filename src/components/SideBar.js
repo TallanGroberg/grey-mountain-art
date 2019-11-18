@@ -31,9 +31,17 @@ const SideBar = (props) => {
 
 const SideBarStyle = styled.div`
 box-shadow: 0px 3px 31px -19px rgba(0,0,0,0.75);
+  img {
+    width: 80%;
+    height: 65%;
+  }
+
+@media only screen and (min-width: 1000px) {
 img {
   width: 75%;
   height: 80%;
+}
+
 }
 `
 

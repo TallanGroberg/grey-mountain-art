@@ -23,7 +23,7 @@ const LargeArtPiece = (props) => {
 const LargeArtPieceStyle = styled.div`
   img {
     width: 90%;
-    height: 90vh;
+    height: 75vh;
   }
 `
 

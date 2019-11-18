@@ -31,6 +31,7 @@ const ArtPieceStyle = styled.div`
     width: 75%;
     height: 80vh;
   }
+
 `;
 
 export default withTheme(ArtPiece);
