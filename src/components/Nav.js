@@ -38,7 +38,7 @@ const NavStyle = styled.div`
     }
 
     @media only screen and (min-width: 1000px) {
-      top: 3pt;
+      top: -1pt;
     }
 `
 
