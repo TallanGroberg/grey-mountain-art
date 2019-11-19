@@ -13,9 +13,10 @@ const Nav = () => {
 };
 
 const NavStyle = styled.div`
-    height: 5vh;
+    height: 7vh;
     width: 105%;
     left: -5pt;
+    align-content: center;
     box-shadow: 0px 0px 10px -5px rgba(0,0,0,0.75);
     background-color: whitesmoke;
     display: grid;
@@ -37,7 +38,7 @@ const NavStyle = styled.div`
     }
 
     @media only screen and (min-width: 1000px) {
-      top: 0;
+      top: 3pt;
     }
 `
 

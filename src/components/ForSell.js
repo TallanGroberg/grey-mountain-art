@@ -33,6 +33,7 @@ const ForSell = (props) => {
 
 const ForSellStyle = styled.div`
   text-align: center;
+  margin-top: 7vh;
  
   div {
     margin-top: 5vh;
@@ -40,13 +41,13 @@ const ForSellStyle = styled.div`
   }
   img {
     width: 80%;
-    height: 65%;
+    height: 75vh;
   }
 
   @media only screen and (min-width: 1000px) {
   img {
     width: 75%;
-    height: 80%;
+    height: 80vh;
     }
   }
 `
